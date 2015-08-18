@@ -1,0 +1,132 @@
+﻿[
+  {
+    "id": 1,
+    "typeID": 1,
+    "name": "Padded",
+    "cost": 500,
+    "armorClass": "11 + Dex modifier",
+    "strength": null,
+    "stealth": "Disadvantage",
+    "weight": "8 lb."
+  },
+  {
+    "id": 2,
+    "typeID": 1,
+    "name": "Leather",
+    "cost": 1000,
+    "armorClass": "11 + Dex modifier",
+    "strength": null,
+    "stealth": null,
+    "weight": "10 lb."
+  },
+  {
+    "id": 3,
+    "typeID": 1,
+    "name": "Studded leather",
+    "cost": 4500,
+    "armorClass": "12 + Dex modifier",
+    "strength": null,
+    "stealth": null,
+    "weight": "13 lb."
+  },
+  {
+    "id": 4,
+    "typeID": 2,
+    "name": "Hide",
+    "cost": 1000,
+    "armorClass": "12 + Dex modifier (max 2)",
+    "strength": null,
+    "stealth": null,
+    "weight": "12 lb."
+  },
+  {
+    "id": 5,
+    "typeID": 2,
+    "name": "Chain shirt",
+    "cost": 5000,
+    "armorClass": "13 + Dex modifier (max 2)",
+    "strength": null,
+    "stealth": null,
+    "weight": "20 lb."
+  },
+  {
+    "id": 6,
+    "typeID": 2,
+    "name": "Scale mail",
+    "cost": 5000,
+    "armorClass": "14 + Dex modifier (max 2)",
+    "strength": null,
+    "stealth": "Disadvantage",
+    "weight": "45 lb."
+  },
+  {
+    "id": 7,
+    "typeID": 2,
+    "name": "Breastplate",
+    "cost": 40000,
+    "armorClass": "14 + Dex modifier (max 2)",
+    "strength": null,
+    "stealth": null,
+    "weight": "20 lb."
+  },
+  {
+    "id": 8,
+    "typeID": 2,
+    "name": "Half plate",
+    "cost": 75000,
+    "armorClass": "15 + Dex modifier (max 2)",
+    "strength": null,
+    "stealth": "Disadvantage",
+    "weight": "40 lb."
+  },
+  {
+    "id": 9,
+    "typeID": 3,
+    "name": "Ring mail",
+    "cost": 3000,
+    "armorClass": "14",
+    "strength": null,
+    "stealth": "Disadvantage",
+    "weight": "40 lb."
+  },
+  {
+    "id": 10,
+    "typeID": 3,
+    "name": "Chain mail",
+    "cost": 7500,
+    "armorClass": "16",
+    "strength": 13,
+    "stealth": "Disadvantage",
+    "weight": "55 lb."
+  },
+  {
+    "id": 11,
+    "typeID": 3,
+    "name": "Splint",
+    "cost": 20000,
+    "armorClass": "17",
+    "strength": 15,
+    "stealth": "Disadvantage",
+    "weight": "60 lb."
+  },
+  {
+    "id": 12,
+    "typeID": 3,
+    "name": "Plate",
+    "cost": 150000,
+    "armorClass": "18",
+    "strength": 15,
+    "stealth": "Disadvantage",
+    "weight": "65 lb."
+  },
+  {
+    "id": 13,
+    "typeID": 4,
+    "name": "Shield",
+    "cost": 1000,
+    "armorClass": 2,
+    "strength": null,
+    "stealth": null,
+    "weight": "6 lb."
+  }
+]

@@ -1,0 +1,319 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Burglar’s Pack",
+    "cost": 1600,
+    "contents": [
+      {
+        "itemID": 14,
+        "qty": 1
+      },
+      {
+        "itemID": 15,
+        "qty": 1
+      },
+      {
+        "itemID": 100,
+        "qty": 1
+      },
+      {
+        "itemID": 19,
+        "qty": 1
+      },
+      {
+        "itemID": 26,
+        "qty": 5
+      },
+      {
+        "itemID": 38,
+        "qty": 1
+      },
+      {
+        "itemID": 46,
+        "qty": 1
+      },
+      {
+        "itemID": 72,
+        "qty": 10
+      },
+      {
+        "itemID": 61,
+        "qty": 1
+      },
+      {
+        "itemID": 67,
+        "qty": 2
+      },
+      {
+        "itemID": 80,
+        "qty": 5
+      },
+      {
+        "itemID": 95,
+        "qty": 1
+      },
+      {
+        "itemID": 98,
+        "qty": 1
+      },
+      {
+        "itemID": 82,
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Diplomat’s Pack",
+    "cost": 3900,
+    "contents": [
+      {
+        "itemID": 31,
+        "qty": 1
+      },
+      {
+        "itemID": 28,
+        "qty": 2
+      },
+      {
+        "itemID": 35,
+        "qty": 1
+      },
+      {
+        "itemID": 19,
+        "qty": 1
+      },
+      {
+        "itemID": 55,
+        "qty": 1
+      },
+      {
+        "itemID": 56,
+        "qty": 1
+      },
+      {
+        "itemID": 59,
+        "qty": 1
+      },
+      {
+        "itemID": 67,
+        "qty": 2
+      },
+      {
+        "itemID": 68,
+        "qty": 5
+      },
+      {
+        "itemID": 70,
+        "qty": 1
+      },
+      {
+        "itemID": 86,
+        "qty": 1
+      },
+      {
+        "itemID": 90,
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Dungeoneer’s Pack",
+    "cost": 1200,
+    "contents": [
+      {
+        "itemID": 14,
+        "qty": 1
+      },
+      {
+        "itemID": 38,
+        "qty": 1
+      },
+      {
+        "itemID": 46,
+        "qty": 1
+      },
+      {
+        "itemID": 72,
+        "qty": 10
+      },
+      {
+        "itemID": 96,
+        "qty": 10
+      },
+      {
+        "itemID": 95,
+        "qty": 1
+      },
+      {
+        "itemID": 80,
+        "qty": 10
+      },
+      {
+        "itemID": 98,
+        "qty": 1
+      },
+      {
+        "itemID": 82,
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Entertainer’s Pack",
+    "cost": 4000,
+    "contents": [
+      {
+        "itemID": 14,
+        "qty": 1
+      },
+      {
+        "itemID": 18,
+        "qty": 1
+      },
+      {
+        "itemID": 34,
+        "qty": 2
+      },
+      {
+        "itemID": 26,
+        "qty": 5
+      },
+      {
+        "itemID": 80,
+        "qty": 5
+      },
+      {
+        "itemID": 98,
+        "qty": 1
+      },
+      {
+        "toolID": 18,
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Explorer’s Pack",
+    "cost": 1000,
+    "contents": [
+      {
+        "itemID": 14,
+        "qty": 1
+      },
+      {
+        "itemID": 18,
+        "qty": 1
+      },
+      {
+        "itemID": 65,
+        "qty": 1
+      },
+      {
+        "itemID": 95,
+        "qty": 1
+      },
+      {
+        "itemID": 96,
+        "qty": 10
+      },
+      {
+        "itemID": 80,
+        "qty": 10
+      },
+      {
+        "itemID": 98,
+        "qty": 1
+      },
+      {
+        "itemID": 82,
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Priest’s Pack",
+    "cost": 1000,
+    "contents": [
+      {
+        "itemID": 14,
+        "qty": 1
+      },
+      {
+        "itemID": 20,
+        "qty": 1
+      },
+      {
+        "itemID": 26,
+        "qty": 10
+      },
+      {
+        "itemID": 95,
+        "qty": 1
+      },
+      {
+        "itemID": 101,
+        "qty": 1
+      },
+      {
+        "itemID": 102,
+        "qty": 2
+      },
+      {
+        "itemID": 103,
+        "qty": 1
+      },
+      {
+        "itemID": 104,
+        "qty": 1
+      },
+      {
+        "itemID": 80,
+        "qty": 2
+      },
+      {
+        "itemID": 98,
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Scholar’s Pack",
+    "cost": 4000,
+    "contents": [
+      {
+        "itemID": 14,
+        "qty": 1
+      },
+      {
+        "itemID": 105,
+        "qty": 1
+      },
+      {
+        "itemID": 55,
+        "qty": 1
+      },
+      {
+        "itemID": 56,
+        "qty": 1
+      },
+      {
+        "itemID": 69,
+        "qty": 10
+      },
+      {
+        "itemID": 106,
+        "qty": 1
+      },
+      {
+        "itemID": 107,
+        "qty": 1
+      }
+    ]
+  }
+]

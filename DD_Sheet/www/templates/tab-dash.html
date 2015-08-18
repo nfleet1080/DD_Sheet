@@ -1,0 +1,24 @@
+<ion-view view-title="Character List">
+    <ion-content>
+
+        <ion-list ng-if="$storage.userCharacters" show-delete="deleteMode">
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="char in $storage.userCharacters | orderBy:'lastDate'" type="item-text-wrap" href="#/tab/character/{{char.id}}">
+                
+                <img ng-src="{{char.avatar}}">
+                <h2>{{char.name}}</h2>
+                <p>Level {{char.level}} {{char.class}}</p>
+                <p>Last used on {{char.lastDate | date:'MM/dd/yyyy'}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <ion-option-button class="button-assertive" ng-click="showConfirm(char)">
+                    Delete
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+        <div ng-if="!$storage.userCharacters" class="card">
+            <div class="item item-text-wrap">
+                You have not created any characters yet.
+            </div>
+        </div>
+        
+    </ion-content>
+</ion-view>

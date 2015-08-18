@@ -1,0 +1,340 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Cleric",
+    "Description": "Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic.",
+    "HitDie": 8,
+    "PrimaryAbility": 5,
+    "SavingThrowProficiencies": [ 4, 6 ],
+    "EquipmentTypeProficiencies": [ 1, 2, 4, 5, 6 ],
+    "ArmorProficiencies": [ ],
+    "WeaponProficiencies": [ ],
+    "ToolProficiencies": [ ],
+    "StartingWealth": {
+      "DieCount": 5,
+      "Die": 4,
+      "Multiplier": 10
+    },
+    "StartingEquip": [
+      [
+        [
+          {
+            "Type": "Weapon",
+            "id": 7,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Weapon",
+            "id": 32,
+            "ifProficient": true,
+            "qty": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "Type": "Armor",
+            "id": 6,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Armor",
+            "id": 2,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Armor",
+            "id": 5,
+            "ifProficient": true,
+            "qty": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "Type": "Weapon",
+            "id": 12,
+            "ifProficient": false,
+            "qty": 1
+          },
+          {
+            "Type": "Gear",
+            "id": 6,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Equipment",
+            "id": 5,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Equipment",
+            "id": 6,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "Type": "Pack",
+            "id": 6,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Pack",
+            "id": 5,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "Type": "Armor",
+            "id": 13,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "Type": "Category",
+            "id": 4,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ]
+      ]
+    ],
+    "Skills": {
+      "HowMany": 2,
+      "Choices": [ 6, 11, 12, 18, 9 ]
+    },
+    "Icon": "images/cleric.svg",
+    "AbilitySuggestion": "First, Wisdom should be your highest ability score, followed by Strength or Constitution.",
+    "BackgroundSuggestion": "Choose the acolyte background.",
+    "SpellSuggestion": ""
+  },
+  {
+    "id": 2,
+    "name": "Fighter",
+    "Description": "Questing knights, conquering overlords, royal champions, elite foot soldiers, hardened mercenaries, and bandit kings — as fighters, they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat. And they are well acquainted with death, both meting it out and staring it defiantly in the face.",
+    "HitDie": 10,
+    "PrimaryAbility": [ 1, 2 ],
+    "SavingThrowProficiencies": [ 1, 3 ],
+    "EquipmentTypeProficiencies": [ 1, 2, 3, 4, 5, 6, 7, 8 ],
+    "ArmorProficiencies": [ ],
+    "WeaponProficiencies": [ ],
+    "ToolProficiencies": [ ],
+    "StartingWealth": {
+      "DieCount": 5,
+      "Die": 4,
+      "Multiplier": 10
+    },
+    "StartingEquip": [
+      [
+        [
+          {
+            "Type": "Armor",
+            "id": 10,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Armor",
+            "id": 2,
+            "ifProficient": false,
+            "qty": 1
+          },
+          {
+            "Type": "Weapon",
+            "id": 37,
+            "ifProficient": false,
+            "qty": 1
+          },
+          {
+            "Type": "Gear",
+            "id": 4,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "Type": "Equipment",
+            "id": 6,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Armor",
+            "id": 2,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Armor",
+            "id": 5,
+            "ifProficient": true,
+            "qty": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "Type": "Weapon",
+            "id": 12,
+            "ifProficient": false,
+            "qty": 1
+          },
+          {
+            "Type": "Gear",
+            "id": 6,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Equipment",
+            "id": 9,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "Type": "Pack",
+            "id": 6,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ],
+        [
+          {
+            "Type": "Pack",
+            "id": 5,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "Type": "Armor",
+            "id": 13,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "Type": "Category",
+            "id": 4,
+            "ifProficient": false,
+            "qty": 1
+          }
+        ]
+      ]
+    ],
+    "Skills": {
+      "HowMany": 2,
+      "Choices": [ 2, 10, 1, 6, 11, 16, 13, 14 ]
+    },
+    "Icon": "images/fighter.svg",
+    "AbilitySuggestion": "First, make Strength or Dexterity your highest ability score, depending on whether you want to focus on melee weapons or on archery (or finesse weapons). Your next-highest score should be Constitution.",
+    "BackgroundSuggestion": "Choose the soldier background.",
+    "SpellSuggestion": ""
+  },
+  {
+    "id": 3,
+    "name": "Rogue",
+    "Description": "Rogues rely on skill, stealth, and their foes’ vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.",
+    "HitDie": 8,
+    "PrimaryAbility": [ 2 ],
+    "SavingThrowProficiencies": [ 2, 4 ],
+    "EquipmentTypeProficiencies": [ 1, 5, 6 ],
+    "ArmorProficiencies": [ ],
+    "WeaponProficiencies": [ 35, 23, 27, 29 ],
+    "ToolProficiencies": [ ],
+    "StartingWealth": {
+      "DieCount": 4,
+      "Die": 4,
+      "Multiplier": 10
+    },
+    "StartingEquip": [ ],
+    "Skills": {
+      "HowMany": 4,
+      "Choices": [ 2, 1, 15, 11, 16, 7, 13, 17, 3, 4 ]
+    },
+    "Icon": "images/rogue.svg",
+    "AbilitySuggestion": "First, Dexterity should be your highest ability score. Make Intelligence your next-highest if you want to excel at Investigation. Choose Charisma instead if you plan to emphasize deception and social interaction.",
+    "BackgroundSuggestion": "Choose the criminal background.",
+    "SpellSuggestion": ""
+  },
+  {
+    "id": 4,
+    "name": "Wizard",
+    "Description": "Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control. Their magic conjures monsters from other planes of existence, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, or open portals to other worlds.",
+    "HitDie": 6,
+    "PrimaryAbility": [ 4 ],
+    "SavingThrowProficiencies": [ 4, 5 ],
+    "EquipmentTypeProficiencies": [ ],
+    "ArmorProficiencies": [ ],
+    "WeaponProficiencies": [ 2, 13, 15, 8, 12 ],
+    "ToolProficiencies": [ 37 ],
+    "StartingWealth": {
+      "DieCount": 4,
+      "Die": 4,
+      "Multiplier": 10
+    },
+    "StartingEquip": [ ],
+    "Skills": {
+      "HowMany": 2,
+      "Choices": [ 5, 6, 11, 7, 12, 9 ]
+    },
+    "Icon": "images/wizard.svg",
+    "AbilitySuggestion": "First, Intelligence should be your highest ability score, followed by Constitution or Dexterity.",
+    "BackgroundSuggestion": "Choose the sage background.",
+    "SpellSuggestion": "Choose the light, mage hand, and ray of frost cantrips, along with the following 1st-level spells for your spellbook: burning hands, charm person, mage armor, magic missile, shield, and sleep."
+  }
+]

@@ -1,0 +1,56 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Common",
+    "Typical Speakers": [ "Humans" ],
+    "Script": "Common"
+  },
+  {
+    "id": 2,
+    "name": "Dwarvish",
+    "Typical Speakers": [ "Dwarves" ],
+    "Script": "Dwarvish"
+  },
+  {
+    "id": 3,
+    "name": "Elvish",
+    "Typical Speakers": [ "Elves" ],
+    "Script": "Elvish"
+  },
+  {
+    "id": 4,
+    "name": "Giant",
+    "Typical Speakers": [ "Ogres", "Giants" ],
+    "Script": "Dwarvish"
+  },
+  {
+    "id": 5,
+    "name": "Gnomish",
+    "Typical Speakers": [ "Gnomes" ],
+    "Script": "Dwarvish"
+  },
+  {
+    "id": 6,
+    "name": "Goblin",
+    "Typical Speakers": [ "Goblinoids" ],
+    "Script": "Dwarvish"
+  },
+  {
+    "id": 7,
+    "name": "Halfling",
+    "Typical Speakers": [ "Halflings" ],
+    "Script": "Common"
+  },
+  {
+    "id": 8,
+    "name": "Orc",
+    "Typical Speakers": [ "Orcs" ],
+    "Script": "Dwarvish"
+  },
+  {
+    "id": 9,
+    "name": "Player's Choice",
+    "Typical Speakers": [ ],
+    "Script": ""
+  }
+]

@@ -1,0 +1,72 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Light Armor",
+    "don": "1 minute",
+    "doff": "1 minute",
+    "description": "Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class."
+  },
+  {
+    "id": 2,
+    "name": "Medium Armor",
+    "don": "5 minutes",
+    "doff": "1 minute",
+    "description": "Medium armor offers more protection than light armor, but it also impairs movement more. If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor type to determine your Armor Class."
+  },
+  {
+    "id": 3,
+    "name": "Heavy Armor",
+    "don": "10 minutes",
+    "doff": "5 minute",
+    "description": "<p>Of all the armor categories, heavy armor offers the best protection. These suits of armor cover the entire body and are designed to stop a wide range of attacks. Only proficient warriors can manage their weight and bulk.</p> <p>Heavy armor doesn’t let you add your Dexterity modifier to your Armor Class, but it also doesn’t penalize you if your Dexterity modifier is negative.</p>"
+  },
+  {
+    "id": 4,
+    "name": "Shield",
+    "don": "1 action",
+    "doff": "1 action",
+    "description": "A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+  },
+  {
+    "id": 5,
+    "name": "Simple Melee Weapons",
+    "don": null,
+    "doff": null,
+    "description": "<p>A melee weapon is used to attack a target within 5 feet of you.</p><p>Most people can use simple weapons with proficiency. These weapons include clubs, maces, and other weapons often found in the hands of commoners.</p>"
+  },
+  {
+    "id": 6,
+    "name": "Simple Ranged Weapons",
+    "don": null,
+    "doff": null,
+    "description": "<p>A ranged weapon is used to attack a target at a distance.</p><p>Most people can use simple weapons with proficiency. These weapons include clubs, maces, and other weapons often found in the hands of commoners.</p>"
+  },
+  {
+    "id": 7,
+    "name": "Martial Melee Weapons",
+    "don": null,
+    "doff": null,
+    "description": "<p>A melee weapon is used to attack a target within 5 feet of you.</p><p>Martial weapons, including swords, axes, and polearms, require more specialized training to use effectively. Most warriors use martial weapons because these weapons put their fighting style and training to best use.</p>"
+  },
+  {
+    "id": 8,
+    "name": "Martial Ranged Weapons",
+    "don": null,
+    "doff": null,
+    "description": "<p>A ranged weapon is used to attack a target at a distance.</p><p>Martial weapons, including swords, axes, and polearms, require more specialized training to use effectively. Most warriors use martial weapons because these weapons put their fighting style and training to best use.</p>"
+  },
+  {
+    "id": 9,
+    "name": "Simple Weapons",
+    "don": null,
+    "doff": null,
+    "description": "Most people can use simple weapons with proficiency. These weapons include clubs, maces, and other weapons often found in the hands of commoners."
+  },
+  {
+    "id": 10,
+    "name": "Martial Weapons",
+    "don": null,
+    "doff": null,
+    "description": "Martial weapons, including swords, axes, and polearms, require more specialized training to use effectively. Most warriors use martial weapons because these weapons put their fighting style and training to best use."
+  }
+]

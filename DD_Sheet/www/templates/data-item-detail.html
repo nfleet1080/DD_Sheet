@@ -1,0 +1,66 @@
+﻿<ion-view view-title="{{item.name}}">
+    <ion-content>
+        <div class="card" ng-repeat="(key, value) in item" ng-if="key!='id' && key!='name' && value!=null">
+            <div class="item item-divider" ng-switch="key" style="text-transform:capitalize">
+                <span ng-switch-when="typeID">
+                    Type
+                </span>
+                <span ng-switch-when="CategoryID">
+                    Category
+                </span>
+                <span ng-switch-when="abilityID">
+                    Ability
+                </span>
+                <span ng-switch-when="longrange">
+                    Maximum Range
+                </span>
+                <span ng-switch-when="normalrange">
+                    Normal Range
+                </span>
+                <span ng-switch-default>
+                    {{key}}
+                </span>
+            </div>
+            <div class="item item-text-wrap" ng-switch="key">
+                <ion-list show-delete="false"
+                          show-reorder="false"
+                          can-swipe="false" ng-switch-when="contents">
+                    <ion-item ng-repeat="item in value | orderBy:'id'" class="item-icon-right" ng-click="additionalDetails(helper.getGear(item.itemID))">
+                        {{helper.getGear(item.itemID).name}}
+                        <i class="icon ion-chevron-right icon-accessory"></i>
+                    </ion-item>
+                </ion-list>
+                <ion-list show-delete="false"
+                          show-reorder="false"
+                          can-swipe="false" ng-switch-when="typeID">
+                    <ion-item ng-repeat="item in value" class="item-icon-right" ng-click="additionalDetails(helper.getEquipmentType(item))">
+                        {{helper.getEquipmentType(item).name}}
+                        <i class="icon ion-chevron-right icon-accessory"></i>
+                    </ion-item>
+                </ion-list>
+                <ion-list show-delete="false"
+                          show-reorder="false"
+                          can-swipe="false" ng-switch-when="properties">
+                    <ion-item ng-repeat="item in value" class="item-icon-right" ng-click="additionalDetails(helper.getWeaponProperty(item))">
+                        {{helper.getWeaponProperty(item).name}}
+                        <i class="icon ion-chevron-right icon-accessory"></i>
+                    </ion-item>
+                </ion-list>
+                <div class="item-icon-right" ng-switch-when="CategoryID" ng-click="additionalDetails(helper.getCategory(value))">
+                    {{helper.getCategory(value).name}}
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+                <div class="item-icon-right" ng-switch-when="abilityID" ng-click="additionalDetails(helper.getAbility(value))">
+                    {{helper.getAbility(value).name}}
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+                <span ng-switch-when="cost">
+                    {{helper.formatMoney(value) }}
+                </span>
+
+                <span ng-switch-default ng-bind-html='helper.isUndefinedOrNull(value, "N/A")'>
+                </span>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

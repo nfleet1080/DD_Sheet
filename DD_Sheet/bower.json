@@ -1,0 +1,16 @@
+{
+  "name": "DD_Sheet",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ionic": "1.0.1",
+    "ionicons": "2.0.1",
+    "font-awesome": "4.4.0",
+    "ngstorage": "0.3.7"
+  }
+}

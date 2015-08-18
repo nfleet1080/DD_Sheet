@@ -1,0 +1,182 @@
+﻿<ion-view view-title="Assign Ability Scores">
+    <ion-nav-buttons side="secondary">
+        <button class="button button-calm" ng-click="pickScores()">
+            Next
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="button-bar">
+            <a class="button" ng-click="showRoll()">4d6</a>
+            <a class="button" ng-click="showQuick()">Quick</a>
+            <a class="button" ng-click="showVariant()">Variant</a>
+            <a class="button" ng-click="showManual()">Manual</a>
+        </div>
+        <p class="padding"><strong>{{helper.getClass(TempCharacter.ClassID).name}} suggestion: </strong><info-popup title="{{helper.getClass(TempCharacter.ClassID).name}}" text="{{helper.getClass(TempCharacter.ClassID).AbilitySuggestion}}"></info-popup><br />Racial Bonuses in parenthesis.</p>
+        <div class="roll" ng-if="activePage == 'roll'">
+            
+            <div class="row" style="padding:0">
+                <div class="col">
+                    <button class="button icon button-clear button-assertive" ng-click="roll()">
+                        <img src="images/d6.svg" class="fa-spin" style="height:42px" />
+                    </button>
+                </div>
+                <div class="col col-75">
+                    <p>Tap the die to reroll. Drag the arrows to reorder.</p>
+                </div>
+            </div>
+            <div class="row" style="padding:0">
+                <div class="col">
+                    <ion-list>
+                        <ion-item ng-repeat="score in rollResults track by $index" style="padding:6px;border:none;height:54px">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse">{{score}}</i>
+                            </span>
+                        </ion-item>
+                    </ion-list>
+                </div>
+                <div class="col col-75">
+                    <ion-list show-delete="false"
+                              show-reorder="true"
+                              can-swipe="false">
+                        <ion-item ng-repeat="item in abilities">
+                            <span style="margin-left:50px">{{item.name.substring(0,3)}}<span ng-show="item.bonus"> (+{{item.bonus}})</span></span>
+
+                            <ion-reorder-button class="ion-arrow-swap fa-rotate-90"
+                                                on-reorder="moveItem(item, $fromIndex, $toIndex)">
+                            </ion-reorder-button>
+
+                        </ion-item>
+                    </ion-list>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="quick" ng-if="activePage == 'quick'">
+            <p class="padding" style="padding-top:0">
+                If you want to save time or don’t like the idea of randomly determining ability scores, you can use the following scores.<!--<br />
+                <strong>{{helper.getClass(TempCharacter.ClassID).Name}} suggestion: </strong><info-popup title="{{helper.getClass(TempCharacter.ClassID).Name}}" text="{{helper.getClass(TempCharacter.ClassID).AbilitySuggestion}}"></info-popup>-->
+            </p>
+            <div class="row" style="padding:0">
+                <div class="col">
+                    <ion-list>
+                        <ion-item ng-repeat="score in staticScores track by $index" style="padding:6px;border:none;height:54px">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse">{{score}}</i>
+                            </span>
+                        </ion-item>
+                    </ion-list>
+                </div>
+                <div class="col col-75">
+                    <ion-list show-delete="false"
+                              show-reorder="true"
+                              can-swipe="false">
+                        <ion-item ng-repeat="item in abilities">
+                            <span style="margin-left:50px">{{item.name.substring(0,3)}}<span ng-show="item.bonus"> (+{{item.bonus}})</span></span>
+                            <ion-reorder-button class="ion-arrow-swap fa-rotate-90"
+                                                on-reorder="moveItem(item, $fromIndex, $toIndex)">
+                            </ion-reorder-button>
+                        </ion-item>
+                    </ion-list>
+                </div>
+            </div>
+        </div>
+
+        <div class="variant" ng-if="activePage == 'variant'">
+            <h3 class="padding" style="margin-top:0;padding-top:0"><span ng-class="{'balanced':calculatePoints()>0,'assertive':calculatePoints()==0}">{{calculatePoints()}}</span> <small>available point<span ng-hide="calculatePoints() == 1">s</span></small></h3>
+            <div class="row">
+                <div class="col col-center" style="font-weight:bold">Str<span ng-show="getStatBonus(1)"> (+{{getStatBonus(1)}})</span></div>
+                <div class="col col-75">
+                    <div class="button-bar">
+                        <button class="button button-positive" ng-click="pointBuy.str = pointBuy.str + 1;$apply;" ng-disabled="pointBuy.str == 15 || notEnoughPoints('str')"><i class="icon ion-plus"></i></button>
+                        <button class="button button-clear button-dark">{{pointBuy.str}}</button>
+                        <button class="button button-dark" ng-click="pointBuy.str = pointBuy.str - 1;$apply;" ng-disabled="pointBuy.str == 8"><i class="icon ion-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-center" style="font-weight:bold">Dex<span ng-show="getStatBonus(2)"> (+{{getStatBonus(2)}})</span></div>
+                <div class="col col-75">
+                    <div class="button-bar">
+                        <button class="button button-positive" ng-click="pointBuy.dex = pointBuy.dex + 1;$apply;" ng-disabled="pointBuy.dex == 15 || notEnoughPoints('dex')"><i class="icon ion-plus"></i></button>
+                        <button class="button button-clear button-dark">{{pointBuy.dex}}</button>
+                        <button class="button button-dark" ng-click="pointBuy.dex = pointBuy.dex - 1;$apply;" ng-disabled="pointBuy.dex == 8"><i class="icon ion-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-center" style="font-weight:bold">Con<span ng-show="getStatBonus(3)"> (+{{getStatBonus(3)}})</span></div>
+                <div class="col col-75">
+                    <div class="button-bar">
+                        <button class="button button-positive" ng-click="pointBuy.con = pointBuy.con + 1;$apply;" ng-disabled="pointBuy.con == 15 || notEnoughPoints('con')"><i class="icon ion-plus"></i></button>
+                        <button class="button button-clear button-dark">{{pointBuy.con}}</button>
+                        <button class="button button-dark" ng-click="pointBuy.con = pointBuy.con - 1;$apply;" ng-disabled="pointBuy.con == 8"><i class="icon ion-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-center" style="font-weight:bold">Int<span ng-show="getStatBonus(4)"> (+{{getStatBonus(4)}})</span></div>
+                <div class="col col-75">
+                    <div class="button-bar">
+                        <button class="button button-positive" ng-click="pointBuy.int = pointBuy.int + 1;$apply;" ng-disabled="pointBuy.int == 15 || notEnoughPoints('int')"><i class="icon ion-plus"></i></button>
+                        <button class="button button-clear button-dark">{{pointBuy.int}}</button>
+                        <button class="button button-dark" ng-click="pointBuy.int = pointBuy.int - 1;$apply;" ng-disabled="pointBuy.int == 8"><i class="icon ion-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-center" style="font-weight:bold">Wis<span ng-show="getStatBonus(5)"> (+{{getStatBonus(5)}})</span></div>
+                <div class="col col-75">
+                    <div class="button-bar">
+                        <button class="button button-positive" ng-click="pointBuy.wis = pointBuy.wis + 1;$apply;" ng-disabled="pointBuy.wis == 15 || notEnoughPoints('wis')"><i class="icon ion-plus"></i></button>
+                        <button class="button button-clear button-dark">{{pointBuy.wis}}</button>
+                        <button class="button button-dark" ng-click="pointBuy.wis = pointBuy.wis - 1;$apply;" ng-disabled="pointBuy.wis == 8"><i class="icon ion-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-center" style="font-weight:bold">Cha<span ng-show="getStatBonus(6)"> (+{{getStatBonus(6)}})</span></div>
+                <div class="col col-75">
+                    <div class="button-bar">
+                        <button class="button button-positive" ng-click="pointBuy.cha = pointBuy.cha + 1;$apply;" ng-disabled="pointBuy.cha == 15 || notEnoughPoints('cha')"><i class="icon ion-plus"></i></button>
+                        <button class="button button-clear button-dark">{{pointBuy.cha}}</button>
+                        <button class="button button-dark" ng-click="pointBuy.cha = pointBuy.cha - 1;$apply;" ng-disabled="pointBuy.cha == 8"><i class="icon ion-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="manual" ng-if="activePage == 'manual'">
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <span class="input-label" style="width:160px">Strength<span ng-show="getStatBonus(1)"> (+{{getStatBonus(1)}})</span>:</span>
+                    <input type="text" ng-model="manual.str" placeholder="8">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label" style="width:160px">Dexterity<span ng-show="getStatBonus(2)"> (+{{getStatBonus(2)}})</span>:</span>
+                    <input type="text" ng-model="manual.dex" placeholder="8">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label" style="width:160px">Constitution<span ng-show="getStatBonus(3)"> (+{{getStatBonus(3)}})</span>:</span>
+                    <input type="text" ng-model="manual.con" placeholder="8">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label" style="width:160px">Intelligence<span ng-show="getStatBonus(4)"> (+{{getStatBonus(4)}})</span>:</span>
+                    <input type="text" ng-model="manual.int" placeholder="8">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label" style="width:160px">Wisdom<span ng-show="getStatBonus(5)"> (+{{getStatBonus(5)}})</span>:</span>
+                    <input type="text" ng-model="manual.wis" placeholder="8">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label" style="width:160px">Charisma<span ng-show="getStatBonus(6)"> (+{{getStatBonus(6)}})</span>:</span>
+                    <input type="text" ng-model="manual.cha" placeholder="8">
+                </label>
+            </div>
+        </div>
+
+ 
+    </ion-content>
+</ion-view>

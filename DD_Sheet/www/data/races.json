@@ -1,0 +1,390 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Dwarf",
+    "image": "images/dwarf.svg",
+    "description": "Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs—these common threads unite all dwarves.",
+    "ASI": [
+      {
+        "bonus": 2,
+        "id": 3
+      }
+    ],
+    "age": 50,
+    "ageDesc": "Dwarves mature at the same rate as humans, but they’re considered young until they reach the age of 50. On average, they live about 350 years.",
+    "alignment": "Lawful Good",
+    "size": "Medium",
+    "names": {
+      "male": [ "Adrik", "Alberich", "Baern", "Barendd", "Brottor", "Bruenor", "Dain", "Darrak", "Delg", "Eberk", "Einkil", "Fargrim", "Flint", "Gardain", "Harbek", "Kildrak", "Morgran", "Orsik", "Oskar", "Rangrim", "Rurik", "Taklinn", "Thoradin", "Thorin", "Tordek", "Traubon", "Travok", "Ulfgar", "Veit", "Vondal" ],
+      "female": [ "Amber", "Artin", "Audhild", "Bardryn", "Dagnal", "Diesa", "Eldeth", "Falkrunn", "Finellen", "Gunnloda", "Gurdis", "Helja", "Hlin", "Kathra", "Kristryd", "Ilde", "Liftrasa", "Mardred", "Riswynn", "Sannl", "Torbera", "Torgga", "Vistra" ],
+      "last": [ "Balderk", "Battlehammer", "Brawnanvil", "Dankil", "Fireforge", "Frostbeard", "Gorunn", "Holderhek", "Ironfist", "Loderr", "Lutgehr", "Rumnaheim", "Strakeln", "Torunn", "Ungart" ]
+    },
+    "speed": 25,
+    "traits": [
+      {
+        "name": "Darkvision",
+        "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Dwarven Resilience",
+        "description": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+      },
+      {
+        "name": "Dwarven Combat Training",
+        "description": "You have proficiency with the battleaxe, handaxe, throwing hammer, and warhammer."
+      },
+      {
+        "name": "Tool Proficiency",
+        "description": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools."
+      },
+      {
+        "name": "Stonecunning",
+        "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+      }
+    ],
+    "languages": [ 1, 2 ],
+    "subrace": [
+      {
+        "id": 1,
+        "name": "Hill Dwarf",
+        "description": "<p>As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience. The gold dwarves of Faerûn in their mighty southern kingdom are hill dwarves, as are the exiled Neidar and the debased Klar of Krynn in the Dragonlance setting.</p>",
+        "ASI": [
+          {
+            "id": 5,
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Dwarven Toughness",
+            "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+          }
+        ],
+        "baseHeight": 44,
+        "heightModifier": {
+          "qty": 2,
+          "die": 4
+        },
+        "baseWeight": 115,
+        "weightModifier": {
+          "qty": 2,
+          "die": 6
+        }
+      },
+      {
+        "id": 2,
+        "name": "Mountain Dwarf",
+        "description": "<p>As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain. You’re probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern Faerûn, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.</p>",
+        "ASI": [
+          {
+            "id": 1,
+            "bonus": 2
+          }
+        ],
+        "traits": [
+          {
+            "name": "Dwarven Armor Training",
+            "description": "You have proficiency with light and medium armor."
+          }
+        ],
+        "baseHeight": 48,
+        "heightModifier": {
+          "qty": 2,
+          "die": 4
+        },
+        "baseWeight": 130,
+        "weightModifier": {
+          "qty": 2,
+          "die": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Elf",
+    "image": "images/elf.svg",
+    "description": "<p>Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.</p>",
+    "ASI": [
+      {
+        "id": 2,
+        "bonus": 2
+      }
+    ],
+    "age": 100,
+    "ageDesc": "An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old.",
+    "alignment": "Chaotic Good",
+    "size": "Medium",
+    "names": {
+      "male": [ "Adran", "Aelar", "Aramil", "Arannis", "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Thamior", "Tharivol", "Theren", "Varis" ],
+      "female": [ "Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thia", "Vadania", "Valanthe", "Xanaphia" ],
+      "last": [ "Amakiir (Gemflower)", "Amastacia (Starflower)", "Galanodel (Moonwhisper)", "Holimion (Diamonddew)", "Ilphelkiir (Gemblossom)", "Liadon (Silverfrond)", "Meliamne (Oakenheel)", "Naïlo (Nightbreeze)", "Siannodel (Moonbrook)", "Xiloscient (Goldpetal)" ]
+    },
+    "speed": 30,
+    "traits": [
+      {
+        "name": "Darkvision",
+        "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Keen Senses",
+        "description": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep."
+      },
+      {
+        "name": "Trance",
+        "description": "Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+      }
+    ],
+    "languages": [ 1, 3 ],
+    "subrace": [
+      {
+        "id": 1,
+        "name": "High Elf",
+        "description": "<p>As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.</p><p>The sun elves of Faerûn (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold.</p>",
+        "ASI": [
+          {
+            "id": 4,
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Elf Weapon Training",
+            "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+          },
+          {
+            "name": "Cantrip",
+            "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
+          },
+          {
+            "name": "Extra Language",
+            "description": "You can speak, read, and write one extra language of your choice."
+          }
+        ],
+        "baseHeight": 54,
+        "heightModifier": {
+          "qty": 2,
+          "die": 10
+        },
+        "baseWeight": 90,
+        "weightModifier": {
+          "qty": 1,
+          "die": 4
+        }
+      },
+      {
+        "id": 2,
+        "name": "Wood Elf",
+        "description": "<p>As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests. This category includes the wild elves (grugach) of Greyhawk and the Kagonesti of Dragonlance, as well as the races called wood elves in Greyhawk and the Forgotten Realms. In Faerûn, wood elves (also called wild elves, green elves, or forest elves) are reclusive and distrusting of non-elves.</p><p>Wood elves’ skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper-colored. Their eyes are green, brown, or hazel.</p>",
+        "ASI": [
+          {
+            "id": 5,
+            "bonus": 2
+          }
+        ],
+        "traits": [
+          {
+            "name": "Elf Weapon Training",
+            "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+          },
+          {
+            "name": "Fleet of Foot",
+            "description": "Your base walking speed increases to 35 feet."
+          },
+          {
+            "name": "Mask of the Wild",
+            "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+          }
+        ],
+        "baseHeight": 54,
+        "heightModifier": {
+          "qty": 2,
+          "die": 10
+        },
+        "baseWeight": 100,
+        "weightModifier": {
+          "qty": 1,
+          "die": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Halfling",
+    "image": "images/halfling.svg",
+    "description": "The comforts of home are the goals of most halflings' lives : a place to se ttle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders o f new lands and peoples. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along an dirt road or a raft floating downriver.",
+    "ASI": [
+      {
+        "id": 2,
+        "bonus": 2
+      }
+    ],
+    "age": 20,
+    "ageDesc": "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century.",
+    "alignment": "Lawful Good",
+    "size": "Small",
+    "names": {
+      "male": [ "Alton", "Ander", "Cade", "Corrin", "Eldon", "Errich", "Finnan", "Garret", "Lindal", "Lyle", "Merric", "Milo", "Osborn", "Perrin", "Reed", "Roscoe", "Wellby" ],
+      "female": [ "Andry", "Bree", "Callie", "Cora", "Euphemia", "Jillian", "Kithri", "Lavinia", "Lidda", "Merla", "Nedda", "Paela", "Portia", "Seraphina", "Shaena", "Trym", "Vani", "Verna" ],
+      "last": [ "Brushgather", "Goodbarrel", "Greenbottle", "High-hill", "Hilltopple", "Leagallow", "Tealeaf", "Thorngage", "Tosscobble", "Underbough" ]
+    },
+    "speed": 25,
+    "traits": [
+      {
+        "name": "Lucky",
+        "description": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+      },
+      {
+        "name": "Brave",
+        "description": "You have advantage on saving throws against being frightened."
+      },
+      {
+        "name": "Halfling Nimbleness",
+        "description": "You can move through the space of any creature that is of a size larger than yours."
+      }
+    ],
+    "languages": [ 1, 7 ],
+    "subrace": [
+      {
+        "id": 1,
+        "name": "Lightfoot",
+        "description": "<p>As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You’re inclined to be affable and get along well with others. In the Forgotten Realms, lightfoot halflings have spread the farthest and thus are the most common variety.</p><p>Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life. In the world of Greyhawk, these halflings are called hairfeet or tallfellows.</p>",
+        "ASI": [
+          {
+            "id": 6,
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Naturally Stealthy",
+            "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+          }
+        ],
+        "baseHeight": 31,
+        "heightModifier": {
+          "qty": 2,
+          "die": 4
+        },
+        "baseWeight": 35,
+        "weightModifier": {
+          "qty": 1,
+          "die": 1
+        }
+      },
+      {
+        "id": 2,
+        "name": "Stout",
+        "description": "<p>As a stout halfling, you’re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. In the Forgotten Realms, these halflings are called stronghearts, and they’re most common in the south.</p>",
+        "ASI": [
+          {
+            "id": 3,
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Stout Resilience",
+            "description": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+          }
+        ],
+        "baseHeight": 31,
+        "heightModifier": {
+          "qty": 2,
+          "die": 4
+        },
+        "baseWeight": 35,
+        "weightModifier": {
+          "qty": 1,
+          "die": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Human",
+    "image": "images/human.svg",
+    "description": "In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that’s why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
+    "ASI": [
+      {
+        "id": 1,
+        "bonus": 1
+      },
+      {
+        "id": 2,
+        "bonus": 1
+      },
+      {
+        "id": 3,
+        "bonus": 1
+      },
+      {
+        "id": 4,
+        "bonus": 1
+      },
+      {
+        "id": 5,
+        "bonus": 1
+      },
+      {
+        "id": 6,
+        "bonus": 1
+      }
+    ],
+    "age": 20,
+    "ageDesc": "Humans reach adulthood in their late teens and live less than a century.",
+    "alignment": "",
+    "size": "Medium",
+    "names": {
+      "male": [ "Darvin", "Dorn", "Evendur", "Gorstag", "Grim", "Helm", "Malark", "Morn", "Randal", "Stedd", "Bor", "Fodel", "Glar", "Grigor", "Igan", "Ivor", "Kosef", "Mival", "Orel", "Pavel", "Sergor", "Ander", "Blath", "Bran", "Frath", "Geth", "Lander", "Luth", "Malcer", "Stor", "Taman", "Urth" ],
+      "female": [ "Alethra", "Kara", "Katernin", "Mara", "Natali", "Olma", "Tana", "Zora", "Amafrey", "Betha", "Cefrey", "Kethra", "Mara", "Olga", "Silifrey", "Westra", "Arizima", "Chathi", "Nephis", "Nulara", "Murithi", "Sefris", "Thola", "Umara", "Zolis" ],
+      "last": [ "Amblecrown", "Buckman", "Dundragon", "Evenwood", "Greycastle", "Tallstag", "Bersk", "Chernin", "Dotsk", "Kulenov", "Marsk", "Nemetsk", "Shemov", "Starag", "Brightwood", "Helder", "Hornraven", "Lackman", "Stormwind", "Windrivver" ]
+    },
+    "speed": 30,
+    "traits": [
+    ],
+    "languages": [ 1, 9 ],
+    "subrace": [
+      {
+        "id": 1,
+        "name": "None",
+        "description": null,
+        "ASI": [ ],
+        "traits": [ ],
+        "baseHeight": 56,
+        "heightModifier": {
+          "qty": 2,
+          "die": 10
+        },
+        "baseWeight": 110,
+        "weightModifier": {
+          "qty": 2,
+          "die": 4
+        }
+      },
+      {
+        "id": 2,
+        "name": "Variant",
+        "description": null,
+        "ASI": [ ],
+        "traits": [ ],
+        "baseHeight": 56,
+        "heightModifier": {
+          "qty": 2,
+          "die": 10
+        },
+        "baseWeight": 110,
+        "weightModifier": {
+          "qty": 2,
+          "die": 4
+        }
+      }
+    ]
+  }
+]

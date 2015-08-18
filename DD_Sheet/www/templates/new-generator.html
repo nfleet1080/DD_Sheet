@@ -1,0 +1,33 @@
+﻿<ion-view view-title="New Character Generator">
+    <ion-content>
+        <ion-list>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Race:
+                </div>
+                <select ng-model="$parent.selectedRace" ng-options="race.name for race in races" ng-change="update()">
+                </select>
+            </label>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Subrace:
+                </div>
+                <select ng-model="$parent.selectedSubRace" ng-options="subrace.name for subrace in subraces">
+                </select>
+            </label>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Class:
+                </div>
+                <select ng-model="$parent.selectedClass" ng-options="class.name for class in classes">
+                </select>
+            </label>
+        </ion-list>
+        <div class="row">
+            <div class="col col-33 col-offset-67"><a class="button button-block icon-right ion-chevron-right button-calm" href="#/tab/abilityScores" ng-click="selectClass()">Next</a></div>
+        </div>
+        
+    </ion-content>
+</ion-view>

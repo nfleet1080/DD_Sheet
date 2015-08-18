@@ -1,0 +1,52 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Ammunition",
+    "description": "<p>You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</p><p>If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon. A sling must be loaded to deal any damage when used in this way.</p>"
+  },
+  {
+    "id": 2,
+    "name": "Arcane focus",
+    "description": "<p>Casting some spells requires particular objects, specified in parentheses in the component entry. A character can use a component pouch or a spellcasting focus in place of the components specified for a spell. But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell.</p><p>An arcane focus is a special item— an orb, a crystal, a rod, a specially constructed staff, a wand-like length o f wood, or some similar item— designed to channel the power o f arcane spells. A sorcerer, warlock, or w izard can use such an item as a spellcasting focus.</p>"
+  },
+  {
+    "id": 3,
+    "name": "Druidic focus",
+    "description": "<p>Casting some spells requires particular objects, specified in parentheses in the component entry. A character can use a component pouch or a spellcasting focus in place of the components specified for a spell. But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell.</p><p>A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus.</p>"
+  },
+  {
+    "id": 4,
+    "name": "Holy symbol",
+    "description": "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+  },
+  {
+    "id": 5,
+    "name": "Containers",
+    "description": "Objects used to hold or transport something."
+  },
+  {
+    "id": 6,
+    "name": "Artisan’s tools",
+    "description": "These special tools include the items needed to pursue a craft or trade. The table shows examples o f the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency."
+  },
+  {
+    "id": 7,
+    "name": "Gaming set",
+    "description": "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency."
+  },
+  {
+    "id": 8,
+    "name": "Musical instrument",
+    "description": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
+  },
+  {
+    "id": 9,
+    "name": "Vehicle",
+    "description": "<p>A good mount can help you move more quickly through the wilderness, but its primary purpose is to carry the gear that would otherwise slow you down. The Mounts and Other Animals table shows each animal’s speed and base carrying capacity.</p><p> An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together.</p>"
+  },
+  {
+    "id": 10,
+    "name": "Trade Goods",
+    "description": "Most wealth is not in coins. It is measured in livestock, grain, land, rights to collect taxes, or rights to resources (such as a mine or a forest). Guilds, nobles, and royalty regulate trade. Chartered companies are granted rights to conduct trade along certain routes, to send merchant ships to various ports, or to buy or sell specific goods. Guilds set prices for the goods or services that they control, and determine who may or may not offer those goods and services. Merchants commonly exchange trade goods without using currency."
+  }
+]

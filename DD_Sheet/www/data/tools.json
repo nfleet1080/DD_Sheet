@@ -1,0 +1,261 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Alchemist’s supplies",
+    "cost": 5000,
+    "Weight": "8 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 2,
+    "name": "Brewer’s supplies",
+    "cost": 2000,
+    "Weight": "9 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 3,
+    "name": "Calligrapher's supplies",
+    "cost": 1000,
+    "Weight": "5 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 4,
+    "name": "Carpenter’s tools",
+    "cost": 800,
+    "Weight": "6 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 5,
+    "name": "Cartographer’s tools",
+    "cost": 1500,
+    "Weight": "6 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 6,
+    "name": "Cobbler’s tools",
+    "cost": 500,
+    "Weight": "5 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 7,
+    "name": "Cook’s utensils",
+    "cost": 100,
+    "Weight": "8 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 8,
+    "name": "Glassblower’s tools",
+    "cost": 3000,
+    "Weight": "5 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 9,
+    "name": "Jeweler’s tools",
+    "cost": 2500,
+    "Weight": "2 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 10,
+    "name": "Leatherworker’s tools",
+    "cost": 500,
+    "Weight": "5 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 11,
+    "name": "Mason’s tools",
+    "cost": 1000,
+    "Weight": "8 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 12,
+    "name": "Painter’s supplies",
+    "cost": 1000,
+    "Weight": "5 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 13,
+    "name": "Potter’s tools",
+    "cost": 1000,
+    "Weight": "3 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 14,
+    "name": "Smith’s tools",
+    "cost": 2000,
+    "Weight": "8 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 15,
+    "name": "Tinker’s tools",
+    "cost": 5000,
+    "Weight": "10 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 16,
+    "name": "Weaver’s tools",
+    "cost": 100,
+    "Weight": "5 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 17,
+    "name": "Woodcarver’s tools",
+    "cost": 100,
+    "Weight": "5 lb.",
+    "CategoryID": 6
+  },
+  {
+    "id": 18,
+    "name": "Disguise kit",
+    "cost": 2500,
+    "Weight": "3 lb.",
+    "CategoryID": null
+  },
+  {
+    "id": 19,
+    "name": "Forgery kit",
+    "cost": 1500,
+    "Weight": "5 lb.",
+    "CategoryID": null
+  },
+  {
+    "id": 20,
+    "name": "Dice set",
+    "cost": 10,
+    "Weight": null,
+    "CategoryID": 7
+  },
+  {
+    "id": 21,
+    "name": "Dragonchess set",
+    "cost": 100,
+    "Weight": "1/2 lb.",
+    "CategoryID": 7
+  },
+  {
+    "id": 22,
+    "name": "Playing card set",
+    "cost": 50,
+    "Weight": null,
+    "CategoryID": 7
+  },
+  {
+    "id": 23,
+    "name": "Three-Dragon Ante set",
+    "cost": 100,
+    "Weight": null,
+    "CategoryID": 7
+  },
+  {
+    "id": 24,
+    "name": "Herbalism kit",
+    "cost": 500,
+    "Weight": "3 lb.",
+    "CategoryID": null
+  },
+  {
+    "id": 25,
+    "name": "Bagpipes",
+    "cost": 3000,
+    "Weight": "6 lb.",
+    "CategoryID": 8
+  },
+  {
+    "id": 26,
+    "name": "Drum",
+    "cost": 600,
+    "Weight": "3 lb.",
+    "CategoryID": 8
+  },
+  {
+    "id": 27,
+    "name": "Dulcimer",
+    "cost": 2500,
+    "Weight": "10 lb.",
+    "CategoryID": 8
+  },
+  {
+    "id": 28,
+    "name": "Flute",
+    "cost": 200,
+    "Weight": "1 lb.",
+    "CategoryID": 8
+  },
+  {
+    "id": 29,
+    "name": "Lute",
+    "cost": 3500,
+    "Weight": "2 lb.",
+    "CategoryID": 8
+  },
+  {
+    "id": 30,
+    "name": "Lyre",
+    "cost": 3000,
+    "Weight": "2 lb.",
+    "CategoryID": 8
+  },
+  {
+    "id": 31,
+    "name": "Horn",
+    "cost": 300,
+    "Weight": "2 lb.",
+    "CategoryID": 8
+  },
+  {
+    "id": 32,
+    "name": "Pan flute",
+    "cost": 1200,
+    "Weight": "2 lb.",
+    "CategoryID": 8
+  },
+  {
+    "id": 33,
+    "name": "Shawm",
+    "cost": 200,
+    "Weight": "1 lb.",
+    "CategoryID": 8
+  },
+  {
+    "id": 34,
+    "name": "Viol",
+    "cost": 3000,
+    "Weight": "1 lb.",
+    "CategoryID": 8
+  },
+  {
+    "id": 35,
+    "name": "Navigator’s tools",
+    "cost": 2500,
+    "Weight": "2 lb.",
+    "CategoryID": null
+  },
+  {
+    "id": 36,
+    "name": "Poisoner’s kit",
+    "cost": 5000,
+    "Weight": "2 lb.",
+    "CategoryID": null
+  },
+  {
+    "id": 37,
+    "name": "Thieves’ tools",
+    "cost": 2500,
+    "Weight": "1 lb.",
+    "CategoryID": null
+  }
+]
